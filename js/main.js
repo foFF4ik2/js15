@@ -134,7 +134,7 @@ function fullInfo() {
 }
 
 let yearNow = new Date().getFullYear();
-let car1 = {
+let car = {
     engine: 2000,
     model: 'Lacetti',
     name: 'Chevrolet',
@@ -162,11 +162,11 @@ let car2 = {
 };
 
 // let yearNow = new Date().getFullYear(); // получить текущий год как число
-console.log(car1.info()); // Chevrolet Lacetti, 2000cc, year 2010, used
-car1.used = 'new';
-console.log(car1.info()); // Chevrolet Lacetti, 2000cc, year 2019, new -- год изменен
-car1.used = 'used';
-console.log(car1.info()); // Chevrolet Lacetti, 2000cc, year 2019, new -- изменения не выполняются
+console.log(car.info()); // Chevrolet Lacetti, 2000cc, year 2010, used
+car.used = 'new';
+console.log(car.info()); // Chevrolet Lacetti, 2000cc, year 2019, new -- год изменен
+car.used = 'used';
+console.log(car.info()); // Chevrolet Lacetti, 2000cc, year 2019, new -- изменения не выполняются
 console.log(car2.info()); // Infinite FX50 AWD, 5000cc, year 2019, new
 car2.used = 'used';
 console.log(car2.info()); // Infinite FX50 AWD, 5000cc, year 2019, new -- изменения не выполняются
